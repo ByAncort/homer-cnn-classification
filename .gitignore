@@ -1,0 +1,32 @@
+# --- Datos (pesados; los entrega el docente) ---
+*.tar
+*.tar.gz
+*.tgz
+simpsons_train/
+simpsons_test/
+
+# --- Modelos entrenados (se regeneran con el cuaderno) ---
+# Se conserva solo el modelo final; métricas (.json) y tablas (.csv) sí se versionan
+resultados/*.keras
+resultados/*.h5
+resultados/*.pt
+!resultados/modelo_final_simpsons.keras
+
+# --- Python / Jupyter ---
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# --- Entornos virtuales ---
+.venv/
+venv/
+env/
+tfenv/
+
+# --- Archivos temporales de Office ---
+~$*
+
+# --- Sistema operativo ---
+Thumbs.db
+desktop.ini
+.DS_Store
